@@ -1,0 +1,107 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<body>
+    <div class ="container">
+        <div id="mainTitle">
+         <h1 id="title">
+             The Dorren Red News Paper Company
+         </h1>
+         <p id="description">Thank you for taking the time to answer our 
+             yearly customer satisfaction survey</p>
+
+        </div>
+    </div>
+    <form id="survey-form" method='GET' action="#">
+    <div class="content">
+        
+            
+                <div class="question">
+                        <div class="content-inner">
+                    
+                        <label id="name-label" for="name" style="position: relative; bottom: 10px;">
+                           * Name :
+                        </label><br>
+                    
+                        <label id="email-label" for="email">
+                           * Email :
+                        </label><br>
+                   
+                        <label id="number-label" for="number">
+                            * Age :
+                        </label><br>
+                   
+                        <label id="radio-questions" for="rads" style="position: relative; top: 15px;">
+                            How likely are you going to subscribe again ?
+                        </label><br>
+                        <div style="position: relative; top: 15px;">
+                            What kind of reader are you ?</div><br><br>
+                    
+                        <label id="checker" for="checks">
+                            What articles should be avoided ? 
+                        </label><br><br>
+                    
+                        <label id="comments" for="comment">
+                            Any suggestions or comments ? 
+                        </label>
+                    </div>
+                    </div>
+
+                
+                    
+
+          
+            <div class="answer">
+              <div class="content-inner">
+                <div>
+                 <input class="text-field" autofocus id="name" type="text" placeholder="Enter your name here" required>
+                </div>
+          
+                <div>
+                 <input class="text-field " id="email" type="email" placeholder="Enter your email address" required style="margin-top: 10px;">
+                </div>
+           
+                <div>
+                 <input  class="text-field" id="number" type="number" min="1" max="125"  placeholder="Age" required>
+                </div>
+            
+            
+                <ul style="list-style: none; ">
+                  <li class="radio"><label>Absolutely <input id="rads" name="radio-buttons" value="1"  type="radio" ></label></li>
+                  <li class="radio"><label>Maybe <input id="rads" name="radio-buttons" value="2"  type="radio" ></label></li>
+                  <li class="radio"><label>Not really <input id="rads" name="radio-buttons" value="3"  type="radio"  ></label></li>
+                </ul>
+            
+            
+            
+                <select id="dropdown" class="dropdown">
+                    <option disabled value>Select an option</option>
+                    <option value="Voracious Reader">Voracious Reader</option>
+                    <option value="Journalist">Journalist</option>
+                    <option value="student">Student</option>
+                    <option value="Time Pass Reader">Time Pass Reader</option>
+                </select>
+            
+            
+            
+                <ul id="checking" style="list-style: none">
+                    <li class="checkbox"><input id="checks" type="checkbox" name="check" value="1">Politics</li>
+                    <li class="checkbox"><input id="checks" type="checkbox" name="check" value="2">Crime</li>
+                    <li class="checkbox"><input id="checks" type="checkbox" name="check" value="3">Society</li>
+                   
+                </ul>
+            
+        
+                <textarea id="comment" class="text-field" style="height:50px;resize:none;" placeholder="Enter your comments here"></textarea>
+               </div>
+            </div>
+        
+    </div><br>
+    <div class="centerer">
+    <button type="submit" id="submit">Submit !</button></div>
+</form>
+   
+
+   
+ 
+</body>

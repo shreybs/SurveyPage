@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab");
+
+body{
+    margin: 0px;
+    font-family: 'Roboto Slab','Helvetica','Times';
+    font-size: 18px;
+    font-weight: 400;
+    background-image: url("http://socialsharing.info/wp-content/uploads/css-repeating-background-pattern-background-repeat.png");
+}
+h1{
+    font-size: 50px;
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  
+}
+
+p{
+    color: rgb(255, 255, 255);
+}
+.radio, .checkbox {
+    position: relative;
+    left: -43px;
+    margin-left: 10px;
+    display: block;
+    padding-bottom: 10px;
+  }
+
+  .dropdown {
+    height: 35px;
+    width: 140px;
+    padding: 5px;
+    margin: 10px;  
+    margin-top: 15px;
+    border: 1px solid #c0c0c0;
+    border-radius: 2px;
+  }
+
+  .container{
+      text-align: center;
+      padding: 20px;
+      margin: 0px;
+      background-color: rgb(255, 71, 38);
+      color: white;
+      width: auto;
+  }
+
+  
+
+  .content{
+      display: grid;
+      grid-template-columns: 45% 45%;
+      grid-column-gap: 10px;
+      position: relative;
+      top: 25px;
+      padding: 10px;
+      margin: auto;
+      margin-bottom: 20px;
+      width: 50%;
+      background-color: white;
+      border: 4px solid rgb(255, 255, 255);
+      border-radius: 8px;
+     
+  }
+
+  .question{
+    display: grid;
+    justify-self: right;
+    text-align: left;
+    width: 40%;
+    padding: 5px;
+    vertical-align: top;
+    margin-top: 10px;
+  }
+
+  .answer{
+    display: grid;
+    position: relative;
+    bottom: 10px;
+    margin-bottom: 5px;
+    text-align: left;
+    width: 48%;
+    vertical-align: middle;
+  }
+
+  .text-field{
+  height: 30px;
+  width: 280px;
+  padding: 5px;
+  margin: 10px;
+  border: 1px solid #c0c0c0 ;
+  border-radius: 5px;
+  }
+
+  .centerer{
+      text-align: center;
+  }
+  #submit {
+    
+    background-color: rgb(255, 71, 38);
+    border-radius: 4px;
+    color: white;
+    font-size: 1em;
+    height: 40px;
+    width: 96px;
+    margin: 10px;
+    border: 0px solid;
+  }
+
+
+
+ .content-inner{
+     display: grid;
+     grid-template-rows: repeat(7,auto);
+ }
+
+ @media screen and (max-width: 833px) {
+    .input-field {
+      width: 80%;
+    }
+    select {
+      width: 90%;
+    }
+  }
+  
+  @media screen and (max-width: 520px) {
+    .question {
+      width: 100%;
+      text-align: left;
+    }
+    .answer {
+      width: 80%;
+      float: left;
+    }
+    .input-field {
+      width: 50%;
+    }
+    select {
+      width: 100%;
+    }
+  }
+  
